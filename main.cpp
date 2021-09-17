@@ -2,13 +2,15 @@
 
 #include "BitmapImage.h"
 
+using namespace std;
+
 int main() {
-    std::cout << "Image viewer" << std::endl;
+    cout << "Image viewer" << endl;
     BitmapImage b;
     std::string imgName = "test.png";
     if (b.load(imgName))
-        std::cout << "show image: " << imgName << std::endl;
+        cout << "show image: " << imgName << endl;
     else
-        std::cerr << "image:" << imgName << " not readable." << std::endl;
+        cerr << "image:" << imgName << " not readable." << endl;
     return 0;
 }

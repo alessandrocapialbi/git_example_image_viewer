@@ -16,7 +16,9 @@ public:
 private:
     int width, height;
     char *buffer;
-    std::string name;
+    char channels; //Colors + transparency
+    char depth; //Colors' depth
+    string name;
 };
 
 
