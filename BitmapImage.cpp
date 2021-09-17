@@ -19,3 +19,19 @@ bool BitmapImage::load(string name) {
 BitmapImage::~BitmapImage() {
     delete[] buffer;
 }
+
+bool BitmapImage::save(string name) {
+    string fileExt = name.substr(name.find_last_of(".") + 1);
+    if (fileExt == "jpg" || fileExt == "png") {
+        //compress buffer
+        //save image file
+        return true;
+    }
+    return false;
+}
+
+bool BitmapImage::resize(int width, int height) {
+    this->width = width;
+    this->height = height;
+    //...resize the bitmap...
+}

@@ -13,6 +13,10 @@ public:
 
     bool load(string name);
 
+    bool save(string name);
+
+    bool resize(int width, int height);
+
 private:
     int width, height;
     char *buffer;
