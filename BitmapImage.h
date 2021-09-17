@@ -15,7 +15,7 @@ public:
 
     bool save(string name);
 
-    bool resize(int width, int height);
+    void resize(int width, int height);
 
 private:
     int width, height;

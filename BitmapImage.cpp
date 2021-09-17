@@ -30,7 +30,7 @@ bool BitmapImage::save(string name) {
     return false;
 }
 
-bool BitmapImage::resize(int width, int height) {
+void BitmapImage::resize(int width, int height) {
     this->width = width;
     this->height = height;
     //...resize the bitmap...

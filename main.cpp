@@ -1,11 +1,12 @@
 #include <iostream>
 
 #include "BitmapImage.h"
+#include "version.h"
 
 using namespace std;
 
 int main() {
-    cout << "Image viewer" << endl;
+    cout << "Image viewer" << VERSION << endl;
     BitmapImage b;
     string imgName = "test.png";
     if (b.load(imgName)) {

@@ -1,0 +1,10 @@
+//
+// Created by aless on 17/09/2021.
+//
+
+#ifndef GIT_EXAMPLE_IMAGE_VIEWER_VERSION_H
+#define GIT_EXAMPLE_IMAGE_VIEWER_VERSION_H
+
+const string VERSION = "1.0";
+
+#endif //GIT_EXAMPLE_IMAGE_VIEWER_VERSION_H
