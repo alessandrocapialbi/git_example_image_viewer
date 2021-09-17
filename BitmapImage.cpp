@@ -19,3 +19,7 @@ bool BitmapImage::load(string name) {
 BitmapImage::~BitmapImage() {
     delete[] buffer;
 }
+
+bool BitmapImage::save(string name) {
+    return false;
+}
