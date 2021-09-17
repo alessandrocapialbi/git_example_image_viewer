@@ -31,7 +31,10 @@ bool BitmapImage::save(string name) {
 }
 
 void BitmapImage::resize(int width, int height) {
-    this->width = width;
-    this->height = height;
+    if (width > 0 && height > 0) {
+        this->width = width;
+        this->height = height;
+    } else
+        cerr << "Width and height must be over 0" << endl << endl;
     //...resize the bitmap...
 }
